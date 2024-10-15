@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Kuliah</title>
+    <link rel="stylesheet" href="tugas.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../index.html">Balik</a>
+        <h2>Form Pendaftaran Kuliah</h2>
+        <form action="/submit" method="POST">
+            <div class="one">
+                <div class="form-group">
+                    <label for="name">Nama:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Alamat:</label><br>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon:</label><br>
+                    <input type="tel" id="phone" name="phone" required inputmode="numeric" pattern="[0-9]*">
+                </div>
+                <div class="form-group">
+                    <label for="school">Asal Sekolah:</label><br>
+                    <input type="text" id="school" name="school" required>
+                </div>
+            </div>
+
+            <div class="three">
+                <div class="form-group">
+                    <label for="birthplace">Tempat Lahir:</label><br>
+                    <input type="text" id="birthplace" name="birthplace" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Tanggal Lahir:</label><br>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
+
+            <div class="four">
+                <div class="form-group">
+                    <label for="mothername">Nama Ibu Kandung:</label><br>
+                    <input type="text" id="mothername" name="mothername" required>
+                </div>
+                <div class="form-group">
+                    <label for="fathername">Nama Ayah Kandung:</label><br>
+                    <input type="text" id="fathername" name="fathername" required>
+                </div>
+            </div>
+
+            <div class="hobby">
+                <label for="major">Jurusan yang Dipilih:</label><br>
+                <select id="major" name="major" required>
+                    <option value="" disabled selected>Pilih Jurusan</option>
+                    <option value="ta">Teknik Arsitektur</option>
+                    <option value="ti">Teknik Informatika</option>
+                    <option value="tl">Teknik Lingkungan</option>
+                    <option value="tin">Teknik Industri</option>
+                    <option value="ts">Teknik Sipil</option>
+                    <option value="thp">Teknik Hasil Pertanian</option>
+                    <option value="mm">Magister Manajemen</option>
+                    <option value="manajemen">Manajemen</option>
+                    <option value="akuntansiD3">Akuntansi D3</option>
+                    <option value="hukum">Hukum</option>
+                    <option value="pgsd">Pendidikan Guru Sekolah Dasar (PGSD)</option>
+                    <option value="pgpaud">Pendidikan Guru Pendidikan Anak Usia Dini (PGPAUD)</option>
+                </select>
+            </div>
+            <div class="hobby">
+                <label for="hobbies">Hobi (Pilih lebih dari satu dengan menekan ctrl):</label><br>
+                <select id="hobbies" name="hobbies[]" multiple size="5" required>
+                    <option value="membaca">Membaca</option>
+                    <option value="menulis">Menulis</option>
+                    <option value="berlari">Berlari</option>
+                    <option value="memasak">Memasak</option>
+                    <option value="bermusik">Bermusik</option>
+                    <option value="melukis">Melukis</option>
+                    <option value="bermain game">Bermain Game</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+
+</body>
+
+</html>

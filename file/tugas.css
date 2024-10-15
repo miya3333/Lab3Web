@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+.one, .two, .three, .four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    color: #0090ff;
+}
+
+label {
+    font-weight: bold;
+    /* color: #0090ff; */
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="date"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #0090ff;
+    border-radius: 5px;
+}
+select[multiple] {
+    height: auto;
+}
+option {
+    height: 30px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #0090ff;
+}
+
+input[type="submit"]:hover {
+    background-color: #0078cc;
+}
+
+.hobby {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 956px) {
+    input[type="submit"] {
+        font-size: 14px;
+    }
+    .one, .two, .three, .four {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%;
+    }
+}
