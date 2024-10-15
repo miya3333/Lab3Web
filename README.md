@@ -7,3 +7,6 @@ Project Link: [Praktikum 3](https://miya3333.github.io/Lab3Web/)
 ### Soal & Jawaban:
 1. Buatlah form yang menampilkan dropdown menu dan listbox dengan multiple selection. <br>
    > Jawaban: <br>
+   >
+   > Hasil: <br>
+   > <img src="file/Screenshot (422).png" alt="jawaban 1">
